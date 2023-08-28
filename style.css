@@ -1,0 +1,149 @@
+ul#jogadorEscolha li a,
+ul#computadorEscolha li a{
+    opacity: 0.2;
+    transition: ease-in-out 0.3s;
+}
+ul#jogadorEscolha li a:hover,
+ul#jogadorEscolha li a.selecionado,
+ul#computadorEscolha li a.selecionado {
+    opacity: 1;
+}
+
+/* Estilização base */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Botões */
+.botao {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.botao:hover {
+    transform: translateY(-5px);
+}
+
+/* Placar */
+.placar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.jogador,
+.computador {
+    text-align: center;
+}
+
+/* Mensagem */
+.mensagem {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Histórico */
+.historico {
+    text-align: center;
+}
+
+.historico-toggle {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.historico-toggle:hover {
+    transform: translateY(-3px);
+}
+
+.historico-list {
+    list-style: none;
+    margin-top: 10px;
+    display: none;
+    text-align: left;
+}
+
+.historico-list li {
+    margin-bottom: 5px;
+}
+
+/* Estilo da página com base no resultado */
+.vitoria {
+    background-color: #4CAF50; /* Verde */
+}
+
+.derrota {
+    background-color: #FF5733; /* Vermelho */
+}
+
+.empate {
+    background-color: #FFC300; /* Amarelo */
+}
+
+/* Imagens das escolhas */
+.escolha-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.escolha {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.selecionado {
+    border: 2px solid white;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Box */
+.box {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
