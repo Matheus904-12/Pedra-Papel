@@ -52,7 +52,7 @@ body {
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 12px 8px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 20px 8px rgba(0, 0, 0, 0.7);
     width: 100%;
     max-width: 600px;
     margin-top: 20px;
@@ -77,10 +77,10 @@ body {
 }
 
 .escolhas img {
-    max-width: 70px;
+    max-width: 95px;
     cursor: pointer;
     transition: transform 0.3s ease;
-    margin: 0 10px;
+    margin
 }
 
 .escolhas img:hover {
@@ -138,7 +138,6 @@ body {
     color: white;
     padding: 5px 10px;
     font-size: 14px;
-    border
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;

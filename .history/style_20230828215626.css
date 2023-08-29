@@ -1,10 +1,8 @@
-/* Estilos para as escolhas do jogador e do computador */
 ul#jogadorEscolha li a,
-ul#computadorEscolha li a {
+ul#computadorEscolha li a{
     opacity: 0.2;
     transition: ease-in-out 0.3s;
 }
-
 ul#jogadorEscolha li a:hover,
 ul#jogadorEscolha li a.selecionado,
 ul#computadorEscolha li a.selecionado {
@@ -18,29 +16,28 @@ body {
     margin: 0;
     padding: 0;
     transition: background-color 0.5s ease;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh;
 }
 
 /* Estilo do container principal */
 .box {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
+    min-height: 100vh;
+    transition: background-color 0.5s ease;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
 }
 
 /* Estilo do título */
 #titulo {
     font-size: 2.5rem;
-    color: #000;
+    color: #fff;
     margin-bottom: 20px;
 }
 
@@ -49,13 +46,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 100px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 12px 8px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 600px;
-    margin-top: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .jogador,
@@ -77,10 +74,9 @@ body {
 }
 
 .escolhas img {
-    max-width: 70px;
+    max-width: 100px;
     cursor: pointer;
     transition: transform 0.3s ease;
-    margin: 0 10px;
 }
 
 .escolhas img:hover {
@@ -91,7 +87,7 @@ body {
 .result-message {
     font-size: 1.2rem;
     margin-top: 20px;
-    color: #000;
+    color: #fff;
 }
 
 .result-message.vitoria {
@@ -119,7 +115,6 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 20px;
 }
 
 .reiniciar-jogo:hover {
@@ -138,7 +133,6 @@ body {
     color: white;
     padding: 5px 10px;
     font-size: 14px;
-    border
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -160,3 +154,4 @@ body {
     margin-bottom: 5px;
     color: #fff;
 }
+

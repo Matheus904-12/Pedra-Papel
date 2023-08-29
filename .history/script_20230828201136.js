@@ -180,8 +180,6 @@ if (ganhador === 1) {
 // Atualizar estilo da página com base no resultado
 document.querySelector('.box').className = `box ${ganhadorClass}`;
 
- 
-
 
 // Atualizar cor de fundo com base no resultado
 if (ganhador === 1) {

@@ -7,7 +7,7 @@ let historico = [];
 
 function jogar(escolha){
     jogadorEscolha = escolha;
-    computadorEscolha = Math.floor(Math.random() * 3) + 1;
+    computadorEscolha = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
 
 
 /*PEDRA = 1
@@ -180,7 +180,8 @@ if (ganhador === 1) {
 // Atualizar estilo da página com base no resultado
 document.querySelector('.box').className = `box ${ganhadorClass}`;
 
- 
+ // Exibir histórico
+ mostrarHistorico();
 
 
 // Atualizar cor de fundo com base no resultado

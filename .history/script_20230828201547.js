@@ -115,25 +115,26 @@ if (ganhador === 1) {
 }
 
 function mostrarHistorico() {
-let historicoList = document.getElementById('historico-list');
-historicoList.innerHTML = '';
+    const historicoList = document.getElementById('historico-list');
+    historicoList.innerHTML = '';
 
-for (let i = 0; i < historico.length; i++) {
-    let item = historico[i];
-    let resultado = '';
-    if (item.resultado === 1) {
-        resultado = 'Vitória';
-    } else if (item.resultado === 2) {
-        resultado = 'Derrota';
-    } else {
-        resultado = 'Empate';
+    for (let i = 0; i < historico.length; i++) {
+        let item = historico[i];
+        let resultado = '';
+
+        if (item.resultado === 1) {
+            resultado = 'Vitória';
+        } else if (item.resultado === 2) {
+            resultado = 'Derrota';
+        } else {
+            resultado = 'Empate';
+        }
+
+        let listItem = document.createElement('li');
+        listItem.textContent = `Jogador: ${item.jogador} | Computador: ${item.computador} | Resultado: ${resultado}`;
+        historicoList.appendChild(listItem);
     }
-
-    let listItem = document.createElement('li');
-    listItem.textContent = `Jogador: ${item.jogador} | Computador: ${item.computador} | Resultado: ${resultado}`;
-    historicoList.appendChild(listItem);
 }
-
 
 document.getElementById('historico-toggle').addEventListener('click', function() {
     const historicoList = document.querySelector('.historico-list');
@@ -179,8 +180,6 @@ if (ganhador === 1) {
 
 // Atualizar estilo da página com base no resultado
 document.querySelector('.box').className = `box ${ganhadorClass}`;
-
- 
 
 
 // Atualizar cor de fundo com base no resultado
